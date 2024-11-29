@@ -86,6 +86,7 @@ public class CustomConversions {
 
 		defaults.addAll(Jsr310Converters.getConvertersToRegister());
 		defaults.addAll(JMoleculesConverters.getConvertersToRegister());
+		defaults.addAll(NumericBooleanConverters.getConvertersToRegister());
 
 		DEFAULT_CONVERTERS = Collections.unmodifiableList(defaults);
 	}
